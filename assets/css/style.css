@@ -50,5 +50,46 @@ body {
 
 /** Instructions **/
 
+.box {
+    width: 80%;
+    height: 400px;
+    background-color: #9490B3;
+    margin-left: 9%;
+}
 
+.box h2 {
+    color: #D4C151;
+    font-family: Metal Mania;
+    font-size: 3em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 35%;
+    padding-top: 10%;
+    font-size: 4em;
+}
 
+.box p {
+    color: black;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/** Name Section **/ 
+
+#name { 
+    display: flex;
+    flex-wrap: row;
+}
+
+.ursula-img {
+    text-align: left;
+    width: 40%;
+    height: 400px
+}
+
+.text {
+    text-align: right;
+    width: 40%;
+    height: 400px
+}
