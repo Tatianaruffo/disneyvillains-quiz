@@ -14,20 +14,23 @@
     <!--Css Style Sheet-->
     <link rel="stylesheet" href="assets/css/style.css" />    
 </head>
-<body id="game">
-
-    <!-- Quiz container with questions, answers and next button -->
-    <div id="quiz-container" class="display">
-
-        <!--Question numbers -->
+<body>
+    <!-- Quiz container with questions and answers -->
+    <div id="quiz-container">
+        <!--Question number and score -->
         <div id="progress">
             <div class="question-nmbr">
                 <div>Question</div>
                 <div><span id="question-counter"></span><span> / 10</span></div>
             </div>
+            <div class="score">
+                <span id="user-score">0</span>
+                <span> / </span>
+                <span id="total-score">0</span>
+            </div>
         </div>
 
-        <!-- Display questions from js -->
+        <!-- Display questions from questions.js -->
         <div class="quiz-question">
             <div id="question-area">Question</div>
         </div>
@@ -39,14 +42,18 @@
             <button class="answer-btn btn" id="answer-c">Option 3</button>
             <button class="answer-btn btn" id="answer-d">Option 4</button>
         </div>
-        <!-- next button -->
-        <div id="next-container" class="btn-position">
-            <button id="next" class="btn">Next</button>
-        </div>   
+
+        <!-- next button-->
+        <button class="btn btn-next" id="next">Next</button>
+        <!-- back button -->
+        <form action="index.html">
+            <button class="btn btn-small" type="submit" aria-label="Click here to go back to main page">Back to Main Page</button>
+        </form>
     </div>
         
 
     <!-- Main JavaScript -->
-    <script src="assets/js/script.js"></script>    
+    <script src="assets/js/script.js"></script>  
+    <script src="assets/js/questions.js"></script>  
 </body>
 </html>

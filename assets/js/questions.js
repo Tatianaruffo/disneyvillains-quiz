@@ -1,6 +1,6 @@
 // Questions for the quiz
 
-const quizQuestions = [{
+const questions = [{
     question: "Which Disney Villain has a pet named diablo? ",
     answers: [
         {option: 'Cruella'},
