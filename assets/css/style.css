@@ -6,6 +6,7 @@
     padding: 0;
     border: none;
     font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 body {
@@ -121,4 +122,42 @@ body {
     margin-left: 0;
     border: 2px #D4C151;  
     cursor: pointer;
+}
+
+/** Quiz page **/
+
+
+#quiz-container {
+    width: 60%;
+    height: 40%;
+    background-color: rgba(148, 144, 179, 0.97);
+    text-align: center;
+    margin: 5%;
+    padding: 15%;
+}
+
+#answers {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    height: 150px;
+}
+
+.answer-btn {
+    background-color: #D4C151;
+    width: 40%;
+    font-size: 18px;
+    margin: 10px 10px;
+    padding: 5px;
+    height: 70px;
+}
+
+.answer-btn:hover {
+    background-color: #955144;
+}
+
+.question-nmbr{
+    color: black;
 }

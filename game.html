@@ -14,8 +14,36 @@
     <!--Css Style Sheet-->
     <link rel="stylesheet" href="assets/css/style.css" />    
 </head>
-<body>
-    <div>
+<body id="game">
+
+    <!-- Quiz container with questions, answers and next button -->
+    <div id="quiz-container" class="display">
+
+        <!--Question numbers -->
+        <div id="progress">
+            <div class="question-nmbr">
+                <div>Question</div>
+                <div><span id="question-counter"></span><span> / 10</span></div>
+            </div>
+        </div>
+
+        <!-- Display questions from js -->
+        <div class="quiz-question">
+            <div id="question-area">Question</div>
+        </div>
+
+        <!-- Displays answer options from questions js file -->
+        <div id="answers">
+            <button class="answer-btn btn" id="answer-a">Option 1</button>
+            <button class="answer-btn btn" id="answer-b">Option 2</button>
+            <button class="answer-btn btn" id="answer-c">Option 3</button>
+            <button class="answer-btn btn" id="answer-d">Option 4</button>
+        </div>
+        <!-- next button -->
+        <div id="next-container" class="btn-position">
+            <button id="next" class="btn">Next</button>
+        </div>   
+    </div>
         
 
     <!-- Main JavaScript -->
