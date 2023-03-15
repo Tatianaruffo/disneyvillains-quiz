@@ -1,6 +1,14 @@
 const startButton = document.getElementById('btn-start');
 const nextButton = document.getElementById('next');
-const questionContainerElement = document.getElementById('question-container')
+const questionContainerElement = document.getElementById('question-container');
+const questionCounterText = document.getElementById('questionCounter');
+const scoreText = document.getElementById('score');
+
+const CORRECT_BONUS = 10;
+const MAX_QUESTIONS = 10;
+
+let score = 0;
+let questionCounter = 0;
 
 let shuffledQuestions, currentQuestionsIndex; 
 const questionElement = document.getElementById('question-area');
@@ -25,6 +33,7 @@ function startGame () {
 function setNextQuestion () {
     resetState()
     showQuestion(shuffledQuestions[currentQuestionsIndex])
+    questionCounterText.innerText = `${currentQuestionsIndex}/${MAX_QUESTIONS}`;
 
 }
 
@@ -61,7 +70,11 @@ function selectAnswer (e) {
     } else {
         startButton.innerText = 'Restart'
         startButton.classList.remove('hide')
-    } 
+    }
+    
+    if (correct === "true") {
+        incrementScore(CORRECT_BONUS);
+      }
 }
 
 function setStatusClass(element, correct) {
@@ -78,3 +91,8 @@ function clearStatusClass(element) {
     element.classList.remove('btn-correct')
     element.classList.remove('btn-correct')
 }
+
+incrementScore = num => {
+    score += num;
+    scoreText.innerText = score;
+  };

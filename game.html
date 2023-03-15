@@ -19,14 +19,21 @@
     <div id="quiz-container">
         <!--Question and answer container -->
         <div id="question-container" class="hide">
-            <div class="question-nmbr">
-                <div>Question</div>
-                <div><span id="question-counter"></span><span> / 10</span></div>
-            </div>
-            <div class="score">
-                <span id="user-score">0</span>
-                <span> / </span>
-                <span id="total-score">0</span>
+            <div id="hud">
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Question
+                    </p>
+                    <h1 class="hud-main-text" id="questionCounter"></h1>
+                </div>
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
             </div>
             <div id="question-area">Question</div>
             <div id="answers">
