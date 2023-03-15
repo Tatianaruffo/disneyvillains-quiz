@@ -30,11 +30,18 @@ function startGame () {
     setNextQuestion()
 }
 
+// Score and question counter taken from https://www.youtube.com/watch?v=4bctmtuZVcM&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=7
 function setNextQuestion () {
     resetState()
     showQuestion(shuffledQuestions[currentQuestionsIndex])
     questionCounterText.innerText = `${currentQuestionsIndex}/${MAX_QUESTIONS}`;
 
+    if (shuffledQuestions.length === 0 || currentQuestionsIndex >= MAX_QUESTIONS) {
+        //go to the end page
+        return window.location.assign("../end.html");
+    } else if (shuffledQuestions.length <= MAX_QUESTIONS) { 
+        nextButton.classList.remove('hide')
+    } 
 }
 
 function showQuestion(questions) {
@@ -65,12 +72,6 @@ function selectAnswer (e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    if (shuffledQuestions.length > currentQuestionsIndex + 1) { 
-        nextButton.classList.remove('hide')
-    } else {
-        startButton.innerText = 'Restart'
-        startButton.classList.remove('hide')
-    }
     
     if (correct === "true") {
         incrementScore(CORRECT_BONUS);
