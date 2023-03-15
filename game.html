@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="assets/css/style.css" />    
 </head>
 <body>
-    <!-- Quiz container with questions and answers -->
+    <!-- Quiz container with questions, answers and buttons -->
     <div id="quiz-container">
-        <!--Question number and score -->
-        <div id="progress">
+        <!--Question and answer container -->
+        <div id="question-container" class="hide">
             <div class="question-nmbr">
                 <div>Question</div>
                 <div><span id="question-counter"></span><span> / 10</span></div>
@@ -28,26 +28,21 @@
                 <span> / </span>
                 <span id="total-score">0</span>
             </div>
-        </div>
-
-        <!-- Display questions from questions.js -->
-        <div class="quiz-question">
             <div id="question-area">Question</div>
-        </div>
-
-        <!-- Displays answer options from questions js file -->
-        <div id="answers">
+            <div id="answers">
             <button class="answer-btn btn" id="answer-a">Option 1</button>
             <button class="answer-btn btn" id="answer-b">Option 2</button>
             <button class="answer-btn btn" id="answer-c">Option 3</button>
             <button class="answer-btn btn" id="answer-d">Option 4</button>
+            </div>
         </div>
-
+        
         <!-- start button-->
-        <button id="btn-start" class="btn" type="submit" aria-label="Click here to go the game page">Start Quiz!</button>
+        <button id="btn-start" class="btn" type="submit" aria-label="Click here to start the game">Start!</button>
 
         <!-- next button-->
-        <button class="btn btn-next" id="next">Next</button>
+        <button class="btn btn-next hide" id="next">Next</button>
+
         <!-- back button -->
         <form action="index.html">
             <button class="btn btn-small" type="submit" aria-label="Click here to go back to main page">Back to Main Page</button>
