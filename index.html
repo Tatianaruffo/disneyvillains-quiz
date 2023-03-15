@@ -15,46 +15,22 @@
     <link rel="stylesheet" href="assets/css/style.css" />    
 </head>
 <body>
-    <div class="hero">
-        <img id="hero-image" src="assets/images/hero.jpg" alt="">
-        <form action="#name">
-            <button class="btn" type="submit" aria-label="Click here to play the game">Start Quiz!</button>
-        </form>
-        <form action="#instructions">
-            <button class="btn btn-small" type="submit" aria-label="Click here to see instructions">Instructions</button>
-        </form>
-    </div>
-    <div id="instructions">
-        <div class="box">
-            <h2>Instructions</h2>
-            <p>You will be asked a series of questions and for each correct answer you will receive 10 points.
-                At the end of the question you will get the result. 
-                After that you can save the result and go back to the home page to play a new game.
-            </p>
-
-    </div>
-    <div id="name">
-        <div class="ursula">
-            <img class="ursula-img" src="assets/images/ursula.jpg" alt="Ursula from The Little Mermaid">
+    <div class="container">
+        <div id="hero">
+            <img id="hero-image" src="assets/images/hero.jpg" alt="Maleficent, Evil Queen, Cruella and Ursula">
+            <a href="game.html" class="btn btn-quiz">Start Quiz!</a>
+            <a href="#instructions" class="btn ins-btn">Instructions</a>
         </div>
-        <div class="text">
-            <p>
-                I'm a very busy woman and I haven't got all day!<br> 
-                Write your name if you dare to play.
-            </p>
-            <input id="username" class="text-input" type="text" name="username" placeholder="Your Name" required>
-            <div id="message"></div>
-            <form action="game.html">
-                <button class="btn btn-small" type="submit" aria-label="Click here to go the game page">Start Quiz!</button>
-            </form>
-        </div>
-        </div>
+        <div id="instructions">
+            <div class="box">
+                <h2>Instructions</h2>
+                <p>You will be asked a series of questions and for each correct answer you will receive 10 points.
+                    At the end of the question you will get the result. 
+                    After that you can save the result and go back to the home page to play a new game.
+                </p>
 
+        </div>
     </div>
-
-        
-
-
 </body>
 <!-- Main JavaScript -->
 <script src="assets/js/script.js" defer></script>

@@ -6,6 +6,7 @@ let shuffledQuestions, currentQuestionsIndex;
 const questionElement = document.getElementById('question-area');
 const answerButtonsElement = document.getElementById('answers');
 
+//code idea taken from https://www.youtube.com/watch?v=riDzcEQbX6k
 
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
@@ -55,7 +56,7 @@ function selectAnswer (e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    if (shuffledQuestions.length + currentQuestionsIndex + 1) { 
+    if (shuffledQuestions.length > currentQuestionsIndex + 1) { 
         nextButton.classList.remove('hide')
     } else {
         startButton.innerText = 'Restart'
