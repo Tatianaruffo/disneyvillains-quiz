@@ -40,10 +40,10 @@ body {
 }
 
 .btn-small {
-    width: 30%;
-    height: 10%;
-    margin: 0 25% 3% 35%;
-    font-size: 2em;
+    width: 40%;
+    height: 5%;
+    margin: 3% 0;
+    font-size: 1em;
 }
 
 .btn:hover {
@@ -115,12 +115,11 @@ body {
     margin-top: 7%;
 }
 
-.btn-start {
+#btn-start {
     width: 40%;
     height: 10%; 
-    font-size: 3vmin;  
-    margin-left: 0;
-    border: 2px #D4C151;  
+    font-size: 3vmin; 
+    border: 2px solid #D4C151; 
     cursor: pointer;
 }
 
@@ -155,6 +154,14 @@ body {
 }
 
 .answer-btn:hover {
+    color: #955144;
+}
+
+.btn-correct {
+    background-color: #99B870;
+}
+
+.btn-wrong {
     background-color: #955144;
 }
 
