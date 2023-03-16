@@ -209,6 +209,12 @@ Buttons behaved as expected.
 
 [CSS Validator Results](assets/readme/cssChecker.JPG)
 
+### JS
+
+- [JSHint](https://jshint.com/)
+
+[JS Validator Results](assets/readme/JSvalidator.JPG)
+
 ## Deployment
 
 ---
