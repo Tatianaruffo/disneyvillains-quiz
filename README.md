@@ -186,6 +186,13 @@ Buttons behaved as expected.
 
 ### Desktop
 
+![Testing Landing Page](assets/readme/lighthouse-landing.JPG)
+
+* Best practices is a bit low due to the image not been  of high quality, but there's no image of the theme on the image bank websites
+
+![Testing Start Page](assets/readme/lighthouse-startpage.JPG)
+
+* Lighthouse can't score the game page, as it keeps going back to the start mode
 
 ## Deployment
 
@@ -195,7 +202,7 @@ This project was created through [GitHub](https://github.com/):
 
 1. Locating repository, clicking on the "New" button.
 2. Selecting the relevant template: "Code-Institute-Org/gitpod-full-template"
-3. Adding the repository name "innski".
+3. Adding the repository name "disneyvillains-quiz".
 4. Clicking the button "Create repository".
 
 This project was developed using [GitPod](https://gitpod.io/) and committed and pushed to GitHub using the GitPod terminal. Following "git commands" were used:
@@ -214,31 +221,11 @@ This project was deployed from its Github repository to Github Pages:
 6. Click save.
 7. After a few seconds, refresh the page and retrieve the link.
 
-## <a name="#references-credit">References & Credit</a>
-
----
-
-### Media & Fonts
-
-- [tiny.png](https://tinypng.com/): Used to compress media files
-- [Kind Png](https://www.kindpng.com/) & [Harry Potter Fandom](https://harrypotter.fandom.com/): Resources for images
-- [Archive](https://archive.org/details/HarryPotter-hedwigTheme): Resource for Harry Potter Theme Audio
-- [Font Awesome](https://fontawesome.com/): Resource for icons
-- [Google Fonts](https://fonts.google.com): Used as font library
-- [CDN Fonts](https://www.cdnfonts.com/): Used as font library
-- [Remove](https://www.remove.bg/de): Used to create a transparent PNG
-- [MP3 Cut](https://mp3cut.net/de/): Used to cut audio file
-- [RealFaviconGenerator](https://realfavicongenerator.net/): Used to create a Favicon
+## References & Credit
 
 ### Code
 
 - [W3Schools](https://www.w3schools.com/) & [MDN](https://developer.mozilla.org/): General source of help and guidance throughout this project.
-- [W3Schools](https://www.w3schools.com/howto/howto_js_sidenav.asp): Guidance on creating a side navigation.
-- [Nguyễn Quyết](https://betterprogramming.pub/rewrite-your-own-array-methods-foreach-map-filter-find-reduce-1718e1138c3e): Guidance for Array Methods.
-- [freeCodeCamp](https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/): Guidance on setting a Timeout with JavaScript.
-- [Benjamin Knight](https://codepen.io/benknight/pen/BywEpw): Guidance on styling a Progressbar. 
-- [CSS {In Real Life }](https://css-irl.info/drop-shadow-the-underrated-css-filter/): Guidance for drop shadow.
+- [James Q Quick](https://www.youtube.com/@JamesQQuick): How to imcrement score and show questions progress.
+- [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified): Help building the JS code for the quiz
 
-### Content
-
-All the questions provided in the game were taken from [Beano](https://www.beano.com/posts/the-ultimate-hufflepuff-quiz)
