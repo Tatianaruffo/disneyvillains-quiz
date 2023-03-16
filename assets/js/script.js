@@ -3,7 +3,8 @@ const nextButton = document.getElementById('next');
 const questionContainerElement = document.getElementById('question-container');
 const questionCounterText = document.getElementById('questionCounter');
 const scoreText = document.getElementById('score');
-
+const questionElement = document.getElementById('question-area');
+const answerButtonsElement = document.getElementById('answers');
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 10;
 
@@ -11,8 +12,6 @@ let score = 0;
 let questionCounter = 0;
 
 let shuffledQuestions, currentQuestionsIndex; 
-const questionElement = document.getElementById('question-area');
-const answerButtonsElement = document.getElementById('answers');
 
 //code idea taken from https://www.youtube.com/watch?v=riDzcEQbX6k
 
@@ -36,9 +35,9 @@ function setNextQuestion () {
     showQuestion(shuffledQuestions[currentQuestionsIndex])
     questionCounterText.innerText = `${currentQuestionsIndex}/${MAX_QUESTIONS}`;
 
-    if (shuffledQuestions.length === 0 || currentQuestionsIndex >= MAX_QUESTIONS) {
-        //go to the end page
-        return window.location.assign("../end.html");
+    if (currentQuestionsIndex > shuffledQuestions.length) {
+        startButton.classList.remove('hide');
+        questionContainerElement.classList.add('hide')
     } else if (shuffledQuestions.length <= MAX_QUESTIONS) { 
         nextButton.classList.remove('hide')
     } 
