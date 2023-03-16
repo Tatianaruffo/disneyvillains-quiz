@@ -198,6 +198,11 @@ Buttons behaved as expected.
 
 ### HTML
 
+- No errors were found when passing through the official [W3 Validator](https://validator.w3.org/)
+
+[HTML Validator Results](assets/readme/htmlChecker.JPG)
+
+
 ### CSS
 
 - No errors were found when passing through the official [Jigsaw Validator](https://jigsaw.w3.org)
