@@ -6,7 +6,7 @@ This quiz is built for all Disney Villains fans to answer questions about the vi
 
 # Live Project
 
-[View live project here](https://kerstin-w.github.io/harry-potter-quiz/)
+[View live project here](https://tatianaruffo.github.io/disneyvillains-quiz/)
 
 ## Contents
 
@@ -19,13 +19,11 @@ This quiz is built for all Disney Villains fans to answer questions about the vi
   - [Colour Palette](#colour-palette)
   - [Fonts](#fonts)
   - [Images](#images)
-- [Wireframes](#wireframes)
+- [Prototype](#prototype)
 - [Features](#features)
-    - [Home Page](#homepage)
-    - [Game Page](#game-page)
-    - [Game End Page](#game-end)
-    - [Game Score Page](#game-score)
-    - [Instruction Page](#instruction)
+    - [Landing Page](#landingpage)
+    - [Instructions](#instructions)
+    - [Game Page](#game)
 - [Technologies](#technologies)
 - [Testing](#testing)
 - [Deployment](#deployment)
@@ -58,109 +56,62 @@ This quiz is built for all Disney Villains fans to answer questions about the vi
 
 ![Colour Palette](assets/readme/colorPalette.JPG)
 
-A simple colour palette was chosen to reflect the dark and magical character of the Harry Potter world. The background has a dark gradient and the white and light turquoise fonts stand out well and are easy to read. For the game, the colours of the four Hogwards houses were adopted to stay in the theme. However, the original yellow had to be changed to orange because of insufficient contrast.
+The color palette was chosen from a classic image of the Disney Villains. The main colors are black and purple. For the game the yellow becomes also a main color. The green and red colors used to indicate correct and incorrect questions are also taken from the image.
 
-### <a name="fonts">Fonts</a>
+### Fonts
 
-**Heading:** For Heading 1, "Harry Potter" font was selected, which is very unique and directly recognized by users. This stands out beautifully as the heading.
+**Heading:** For Heading and most of the main text I used "Metal Mania".
 
-[_Sourced via CDN Fonts._](https://www.cdnfonts.com/harry-potter.font)
-
-**Body:** “Nunito” This font is simple, modern open and easy to read. The round cap strokes matches well with the round box design on the page.
+**Body:** "Roboto" This font is simple, modern open and easy to read. 
 
 [_Sourced via Google Fonts._](https://fonts.google.com/)
 
-### <a name="images">Images</a>
+### Images
 
-[_Sourced via KindPng._](https://www.kindpng.com/) & [_Sourced via Harry Potter Wiki._](https://harrypotter.fandom.com/)
+[_Sourced via Pinterest._](https://www.pinterest.ie/) 
 
-- The symbols of the four Hogwards houses were used as images.
+- The site has only one image
 
-- Images of Hogwards symbols, ghosts, and students in the game were used as choices for answers.
+- Image taken for color palette has the same source
 
-## <a name="wireframes">Wireframes</a>
+## Prototype
+
+Prototype was created using [Figma](https://www.figma.com/)
 ---
-Deviations from the original wireframe:
-* On the advice of my mentor, I moved the content of the Game-End page to the Game-page.  This will be displayed after all 10 questions have been completed. The idea behind this was to prevent the game-end page from being called by typing in the url bar, even though the game was not completed. 
+Deviations from the original prototype:
+* The photo dimensions didn't work for the quiz page so I chose to stay with a black background.
 
-[Desktop](assets/readme/desktop.pdf)
+[Index](assets/readme/desktop.JPG)
+[Quiz](assets/readme/quiz-desktop.JPG)
 
-[Tablet](assets/readme/tablet.pdf)
-
-[Mobile](assets/readme/mobile.pdf)
-
-## <a name="features">Features</a>
+## Features
 
 ---
 
-### <a name="homepage">Home Page</a>
+### Landing page
 
-- An appealing design and an intuitive navigation and orientation on the website.
-- A website which is fully responsive on all screen sizes.
+- Intuitive navigation and orientation on the website.
 - Easy access to start the game.
 
-![Homepage on Desktop](assets/readme/homepage.jpg "Homepage on Desktop")
-![Homepage on Mobile](assets/readme/homepage-mobile.jpg "Homepage on Mobile")
+![First part](assets/readme/landing.JPG "Landing page")
 
-* The user is greeted with the logo of the Harry Potter quiz, which immediately intrigues the user and also creates a very magical look due to the box shadow. By clicking on the logo or by scrolling down the user gets to the selection of the game.
+* The user is greeted with a hero image of some of the classic Disney Villains and a easy to spot button to start the game together with a button for instructions. 
 
-### Game Choice 
+### Instructions
 
-![Game Choice on Desktop](assets/readme/game-choice-desktop.jpg "Game Choice on Desktop")
-![Game Choice on Mobile](assets/readme/game-choice-mobile.jpg "Game Choice on Mobile")
+![Instructions](assets/readme/instructions.JPG "Instructions")
 
-* The user can choose between one of the four houses. The player's choice is passed on to the game function by an event listener. The Hamburger stays sticky on the homepage allowing the user to navigate easily to the instructions.
+### Game Page
 
-### Side Navigation
+![Start](assets/readme/start.JPG "Start")
 
-![Side Navigation on Desktop](assets/readme/sidenav-desktop.jpg "Side Navigation on Desktop")
-![Side Navigation on Mobile](assets/readme/sidenav-mobile.jpg "Side Navigation on Mobile")
+* The user is redirected to a page where he can choose to start the game clicking the "start" button
 
-* The hambuger is sticky on the homepage allowing the user to reach the navigation at any time.
-Once the user clicks on the hambuger icon, the navigation will slide out. On desktop it pushes the content to the right and on mobile it takes up 100% of the screen. If the side navigation was closed by clicking on the X the content will slide back to the left.
+![Game](assets/readme/game.JPG "Game")
 
-### Footer 
+* The user can see at the top the progress of the game 1/10 and the current score. The user have a feedback when a answer has been selected, indicating whether the answer was correct or incorrect, correct answer goes green and the rest goes red. For each correct answer the user receives 10 points which are added up in the score counter. 
 
-![Footer on Desktop](assets/readme/footer-desktop.jpg "Footer on Desktop")
-![Footer on Mobile](assets/readme/footer-mobile.jpg "Footer on Mobile")
-
-* The footer section includes links to the relevant sites which open in a new tab, when clicked.
-
-### <a name="game-page">Game Page</a>
-
-![Game Page on Desktop](assets/readme/game-page-desktop.jpg "Game Page on Desktop")
-![Game Page on Mobile](assets/readme/game-page-mobile.jpg "Game Page on Mobile")
-
-* On the Game Page, the corresponding questions and answers are loaded according to the user's previous selection. 
-At the top right, the corresponding house logo is loaded. The user can play or pause the audio via the audio icon.
-
-![Game Page on Desktop](assets/readme/game-page1-desktop.jpg "Game Page on Desktop")
-![Game Page on Mobile](assets/readme/game-page1-mobile.jpg "Game Page on Mobile")
-
-* The user receives feedback in text form once an answer has been selected, indicating whether the answer was correct or incorrect. Furthermore, the correct answer choice is also marked in colour. The scoreboard shows which question the user is currently on. The progress is also displayed graphically in the progress bar. For each correct answer the user receives 10 points which are added up in the score counter. 
-
-### <a name="game-end">Game End Section</a>
-
-![Page End Page on Desktop](assets/readme/game-end-desktop.jpg "Game End Page on Desktop")
-![Page End Page on Mobile](assets/readme/game-end-mobile.jpg "Game End Page on Mobile")
-
-* When the user has completed the 10 house questions, the user will see the final score and a message, depending on the score. The user can enter their username and save the points. The button is disabled and will be enabled as soon as the input field is filled in.
-
-### <a name="game-score">Game Score Page</a>
-
-![Page Score Page on Desktop](assets/readme/game-score-desktop.jpg "Game Score Page on Desktop")
-![Page Score Page on Mobile](assets/readme/game-score-mobile.jpg "Game Score Page on Mobile")
-
-* The user is presented with a table with the current score and the saved ones. The name of the score and the house that was played are displayed. The scores are sorted from highest to lowest.
-
-### <a name="instruction">Instruction Page</a>
-
-![Instruction Page on Desktop](assets/readme/instruction-desktop.jpg "Instruction Page on Desktop")
-![Instruction Page on Mobile](assets/readme/instruction-mobile.jpg "Instruction Page on Mobile")
-
-* The Instruction Page gives the user instructions on how the game is played and can be found via the navigation.
-
-## <a name="technologies">Technologies</a>
+## Technologies
 
 ---
 
@@ -172,28 +123,71 @@ At the top right, the corresponding house logo is loaded. The user can play or p
 
 ### Other
 
-- [Color Space](https://mycolor.space/) - Colour Pallete
-- [Colors Wall](https://colorswall.com/) - Colour Pallete
 - [Google Fonts](https://fonts.google.com/) - Fonts
-- [CDN Fonts](https://www.cdnfonts.com/) - Fonts
 - [Tiny PNG](https://tinypng.com/) - Compress Images
-- [Color Space](https://mycolor.space/) - Gradient Background
-- [HTML-CSS-JS](https://html-css-js.com/css/generator/text-shadow/) - Text Shadow Generator
-- [CSS Matic](https://www.cssmatic.com/box-shadow) - Box Shadow Generator
-- [Font Awesome](https://fontawesome.com/) - Icons
-- [RealFaviconGenerator](https://realfavicongenerator.net/) - Favicon Creater
-- [Balsamiq](https://balsamiq.com/) - Wireframes
 - [Github](https://github.com/) - Storing and hosting repository
 - [Gitpod](https://www.gitpod.io/) - Code editor
 - [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+- [Figma](https://www.figma.com/)
 
-## <a name="testing">Testing</a>
+## Testing
 
----
+## Responsiveness
 
-See [TESTING.md](TESTING.md) for an overview of website testing and debugging.
+All pages were tested to ensure responsiveness on screen sizes from 400px and upwards on Chrome, Edge and Firefox.
 
-## <a name="#deployment">Deployment</a>
+Steps to test:
+
+1. Open browser and navigate to [Disney Villains - Landing Page](https://tatianaruffo.github.io/disneyvillains-quiz/)
+2. Open the developer tools (right click and inspect)
+3. Set to responsive and decrease width to 400px
+4. Set the zoom to 50%
+5. Click and drag the responsive window to maximum width
+
+Expected:
+
+Website is responsive on all screen sizes.
+No horizontal scroll is present.
+No elements overlap.
+
+Actual:
+
+Website behaved as expected 
+
+## Functional Testing
+
+**Navigation Links**
+
+Testing was performed to ensure all navigation links on the respective pages, navigated to the correct pages as per design. This was done by clicking on the navigation links on each page.
+
+| Navigation Link | Page to Load            |
+| --------------- | ---------------         |
+| Start Quiz      | game.html               |
+| Instructions    | index.html#instructions |
+| Start at game   | Initiate the game       |
+| Next            | Jump to next question   |
+| Back to main    | index.html
+
+Links on all pages navigated to the correct pages as exptected.
+
+**Game testing**
+
+Testing was performed on the game to ensure behaviour was as expected.
+
+Expected:
+
+After the user clicks their answer, right answer goes green and the rest goes red and the score is incremented.
+
+Actual:
+
+Buttons behaved as expected.
+
+## Lighthouse Testing
+
+### Desktop
+
+
+## Deployment
 
 ---
 

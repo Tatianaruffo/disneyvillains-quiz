@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 10%;
 }
 
 /** Hero section **/
@@ -42,7 +43,7 @@ body {
     height: 10%;
     font-family: Metal Mania;
     font-size: 3em;
-    margin: 1% 0 2% 35%;
+    margin: 1% 0 2% 30%;
     cursor: pointer;
     justify-content: center;
 }
@@ -183,6 +184,18 @@ body {
 #question-area {
     font-size: 2em;
     font-family: Metal Mania;
+}
+
+#hud h1 {
+    font-size: 1.5em;
+    color: #D4C151;
+    margin-bottom: 50%;
+}
+
+#hud p {
+    font-size: 1em;
+    color: #D4C151;
+    margin-bottom: 10%;
 }
 
 .hide {
