@@ -2,7 +2,7 @@
 
 This quiz is built for all Disney Villains fans to answer questions about the villains of Disney universe. The quiz go through 10 of the most famous Disney classics villains. For each question answered correctly the user will receive 10 points. 
 
-![Mockup](assets/readme/mockup.jpg "Mockup")
+![Mockup](assets/readme/mockup.JPG "Mockup")
 
 # Live Project
 
