@@ -194,6 +194,16 @@ Buttons behaved as expected.
 
 * Lighthouse can't score the game page, as it keeps going back to the start mode
 
+## Code checker
+
+### HTML
+
+### CSS
+
+- No errors were found when passing through the official [Jigsaw Validator](https://jigsaw.w3.org)
+
+[CSS Validator Results](assets/readme/cssChecker.JPG)
+
 ## Deployment
 
 ---
