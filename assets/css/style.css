@@ -204,6 +204,13 @@ body {
 
 /** Media Queries **/
 
+@media screen and (max-width: 730px) {
+    .ins-btn {
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 680px) {
     .btn-quiz {
         font-size: 1.5em;
